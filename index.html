@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Energético - Pichau</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="home">
+    <div class="navbar">
+      <div class="logo-pichau">
+        <img src="src/assets/LogoPichau.png" alt="Logo Pichau">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">O PICHAU ENERGY DRINK</a></li>
+          <li><a href="#sabores">CONHEÇA OS SABORES</a></li>
+          <li><a href="#feature-2">ONDE COMPRAR</a></li>
+          <li><a href="#compre">COMPRE AGORA</a></li>
+          <li><a href="#feature-3">SEJA REVENDEDOR</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="logo-pichau2">
+      <div class="img-pichau">
+        <img src="src/assets/LogoPichau2.png" alt="Logo Pichau 2">
+      </div>
+    </div>
+
+    <div class="conteudo-1" id="conteudo-1">
+      <p>
+        Chegou o energético que faltava pra sua rotina intensa! A Pichau, referência gamer na América Latina,
+        orgulhosamente apresenta o Pichau Energy Drink. Pensado pra quem vive no ritmo acelerado das gameplays,
+        maratonas de trabalho e tudo o que exige foco total.
+        <br><br>
+        A gente sabe que passar horas jogando, trabalhando ou estudando exige mais do que concentração, precisa
+        de combustível! E como bons entendedores de setup, agora trazemos também uma bebida pra manter seu ritmo
+        no alto e seu cansaço no low. Três sabores, zero enrolação, e a qualidade que só a Pichau entrega (com
+        ou sem asas)!
+        <br><br>
+        CONHEÇA OS SABORES!
+      </p>
+    </div>
+
+    <div class="conteudo-2">
+      <div class="latas">
+        <img src="src/assets/Latas.png" alt="Latas">
+      </div>
+      <div class="logo-pichau3">
+        <img src="src/assets/PichauLogo3.png" alt="Logo Pichau 3">
+      </div>
+    </div>
+
+    <div id="conteudo-sabor"></div> <!-- container para os conteúdos dinâmicos -->
+
+    <div class="conteudo-3">
+      <div class="botoes">
+        <button class="original">ORIGINAL</button>
+        <button class="tropical">TROPICAL</button>
+        <button class="zero">ZERO AÇÚCARES</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURE 2 -->
+  <section id="feature-2" class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col box-1-principal">
+      <div class="box-1 mdl-grid">
+
+        <!-- Texto -->
+        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet p-principal">
+          <p class="titulo-p">SAIBA ONDE COMPRAR</p>
+          <p class="desc-p">
+            Você pode comprar em nosso site:
+            <span class="link-site">PICHAU.COM.BR</span>
+            <br><br>
+            Ou em um local mais próximo de você.
+          </p>
+          <div class="estado-cidade mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+              <select id="estado" class="mdl-textfield__input">
+                <option value="">Selecione o Estado</option>
+              </select>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+              <select id="cidade" class="mdl-textfield__input">
+                <option value="">Selecione a Cidade</option>
+              </select>
+            </div>
+          </div>
+          <div class="exemplo-bar">
+            <img src="src/assets/Tranquilebas.png" alt="Img Bar">
+            <div class="info-bar">
+              <p class="titulo-1">TRANQUILEBAS BEER</p>
+              <div class="endereco">
+                <img src="src/assets/Endereco.png" alt="Teste">
+                <p>Avenida Getúlio Vargas, 780. Bairro Anita Garibaldi.</p>
+              </div>
+              <div class="contato">
+                <img src="src/assets/Contato.png" alt="Teste">
+                <p>(47) 98906-0878</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAPS -->
+        <div class="maps-div mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet box-2">
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7157.853956522248!2d-48.81292148509421!3d-26.231562104194886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deaf8e8d7acfcb%3A0x778908857f8830d!2sCentro%20de%20Distribui%C3%A7%C3%A3o%20Pichau!5e0!3m2!1spt-BR!2sbr!4v1758197630077!5m2!1spt-BR!2sbr"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 3 -->
+  <section id="feature-3">
+    <div class="container-3 mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+      <div class="principal">
+        <p>SEJA UM REVENDEDOR</p>
+        <button>Entre em Contato</button>
+      </div>
+
+      <!-- Imagens Latas -->
+      <div class="img-latas">
+        <img class="img-latas2" src="src/assets/Latas-Juntas.png" alt="Img Latas">
+        <img class="pombo" src="src/assets/Pombo.png" alt="Pombo">
+      </div>
+      <div class="desc-latas">
+        <p>Torne-se um revendedor do Pichau Energy Drink, o energético oficial da Pichau Gaming, o maior e-commerce
+          gamer
+          da América Latina.
+          <br><br>
+          Aproveite para impulsionar suas vendas e diversificar o seu negócio, unindo-se a uma das marcas mais fortes e
+          reconhecidas no mercado gamer.
+          <br><br>
+          Interessado? Entre em contato e saiba mais sobre as vantagens de ser nosso parceiro.
+        </p>
+      </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <div class="footer mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+      <a href="https://www.instagram.com/pichauoficial" target="_blank"><img src="src/assets/Instagram.png"
+          alt="Icon Insta"></a>
+      <a href="https://www.facebook.com/PichauInfo" target="_blank"><img src="src/assets/Facebook.png"
+          alt="Icon Facebook"></a>
+      <a href="https://www.youtube.com/channel/UCo4-WGKOvw3QmzW8MRuuFtQ" target="_blank"><img
+          src="src/assets/YouTube.png" alt="Icon Youtube"></a>
+      <a href="https://x.com/pichauinfo" target="_blank"><img src="src/assets/X.png" alt="Icon X"></a>
+      <a href="https://www.tiktok.com/@pichauoficial" target="_blank"><img src="src/assets/TikTok.png"
+          alt="Icon TikTok"></a>
+      <div class="footer-2 mdl-cell mdl-cell--2-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+        <img src="src/assets/logo-pichaucombr-compombo-white.png" alt="LogoPichau4">
+        <p>Copyright © 2025
+          <br>
+          Pichau Gaming - Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="src/js/estados-cidades.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>
