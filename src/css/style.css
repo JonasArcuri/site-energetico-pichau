@@ -1197,3 +1197,109 @@ header::before {
         box-shadow: none;
     }
 }
+
+/* ===================== */
+/* MENU HAMBURGUER MOBILE */
+/* ===================== */
+
+.menu-hamburguer {
+    display: none;
+    /* escondido no desktop */
+}
+
+.hamburguer-icon {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2001;
+}
+
+.hamburguer-icon span {
+    display: block;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* animação do ícone */
+.hamburguer-icon.ativo span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburguer-icon.ativo span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer-icon.ativo span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* NAV MOBILE lateral */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease;
+    z-index: 1500;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    margin: 1.5rem 0;
+}
+
+.mobile-nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Kairos';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav ul li a:hover {
+    color: var(--cor-fundo-1);
+    /* usa sua variável de cor */
+}
+
+/* Ativo (menu aberto) */
+.mobile-nav.ativo {
+    right: 0;
+}
+
+/* Regras para mobile */
+@media (max-width: 479px) {
+    .navbar {
+        display: none;
+        /* esconde navbar original */
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+        padding-left: 1rem;
+        position: fixed;
+        z-index: 2000;
+    }
+}
