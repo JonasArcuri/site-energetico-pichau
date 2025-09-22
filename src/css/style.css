@@ -819,19 +819,22 @@ header::before {
     font-family: 'Kairos';
 }
 
-.principal button {
+.principal a {
     background: red;
     color: white;
+    text-align: center;
     border-color: transparent;
     border-radius: 1rem;
     width: 300px;
-    height: 75px;
+    height: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     transition: transform 0.5s ease-in;
+    text-decoration: none;
+    
 }
 
-.principal button:hover {
+.principal a:hover {
     background-color: #a01f19;
     transition: 0.4s ease-out;
 }
