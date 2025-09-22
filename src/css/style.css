@@ -437,8 +437,9 @@ header::before {
 
     /* CONTEÚDO PRINCIPAL */
     .conteudo-1 {
-        max-width: 95%;
+        max-width: 85%;
         padding: 1rem;
+        transform: translateY(2rem);
         text-align: center;
         border-radius: 1rem;
         margin: 0 auto;
@@ -1294,6 +1295,7 @@ header::before {
     }
 
     .menu-hamburguer {
+        gap: 2rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -1306,5 +1308,9 @@ header::before {
         width: 100%;
         /* backdrop-filter: blur(5px); */
         z-index: 2000;
+    }
+
+    .mobile-nav ul li a {
+        font-size: 0.9rem;
     }
 }
