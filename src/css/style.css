@@ -437,12 +437,11 @@ header::before {
 
     /* CONTEÚDO PRINCIPAL */
     .conteudo-1 {
-        max-width: 85%;
+        max-width: 75%;
         padding: 1rem;
         transform: translateY(2rem);
         text-align: center;
         border-radius: 1rem;
-        margin: 0 auto;
     }
 
     .conteudo-1 p {
@@ -1156,7 +1155,7 @@ header::before {
 @media (max-width: 479px) {
 
     .logo-pichau2 {
-        display: none;
+        display: none
     }
 
     .texto-sabor {
@@ -1178,13 +1177,13 @@ header::before {
     }
 
     .conteudo-2.sabor-ativo {
-        margin-top: 1.5rem;
+        margin-top: 7.5rem;
         text-align: center;
     }
 
     .conteudo-2.sabor-ativo img {
         width: 250px;
-        max-width: 90%;
+        max-width: 65%;
     }
 
     .botoes.oculto {
@@ -1268,7 +1267,7 @@ header::before {
 
 .mobile-nav ul li a {
     color: rgb(255, 255, 255);
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Kairos';
@@ -1311,6 +1310,6 @@ header::before {
     }
 
     .mobile-nav ul li a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
