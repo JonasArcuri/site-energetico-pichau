@@ -520,7 +520,7 @@ header::before {
     height: 750px;
     display: flex;
     gap: 10rem;
-    justify-content: baseline;
+    height: auto;
 }
 
 .box-1-principal {
@@ -1315,4 +1315,10 @@ header::before {
     .mobile-nav ul li a {
         font-size: 0.8rem;
     }
+}
+
+#map {
+  width: 100%;
+  height: 400px; /* ou 100% se quiser ocupar tudo */
+  border-radius: 8px;
 }

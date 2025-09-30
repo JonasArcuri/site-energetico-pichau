@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="shortcut icon" href="src/assets/LogoPichau.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <title>Energético - Pichau</title>
@@ -134,13 +135,7 @@
 
         <!-- MAPS -->
         <div class="maps-div mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet box-2">
-          <div class="maps">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7157.853956522248!2d-48.81292148509421!3d-26.231562104194886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deaf8e8d7acfcb%3A0x778908857f8830d!2sCentro%20de%20Distribui%C3%A7%C3%A3o%20Pichau!5e0!3m2!1spt-BR!2sbr!4v1758197630077!5m2!1spt-BR!2sbr"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+          <div id="map"></div> <!-- mapa vai renderizar aqui -->
         </div>
 
       </div>
@@ -152,7 +147,8 @@
     <div class="container-3 mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
       <div class="principal">
         <p>SEJA UM REVENDEDOR</p>
-        <a href="https://wa.me/5547933855870?text=Quero%20ser%20um%20revendedor%20do%20Pichau%20Energy" target="_blank">Entre em Contato</a>
+        <a href="https://wa.me/5547933855870?text=Quero%20ser%20um%20revendedor%20do%20Pichau%20Energy"
+          target="_blank">Entre em Contato</a>
       </div>
 
       <!-- Imagens Latas -->
@@ -195,8 +191,10 @@
 
   </section>
 
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script> <!-- CSV parser -->
   <script src="src/js/menu-hamburg.js"></script>
-  <script src="src/js/estados-cidades.js"></script>
+  <script src="src/js/mapa.js"></script>
   <script src="src/js/script.js"></script>
 </body>
 
